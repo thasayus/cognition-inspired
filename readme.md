@@ -1,11 +1,12 @@
 # File Description
 
-| File                       | Description                                                      | 
-| -------------------------- |:----------------------------------------------------------------:| 
-| create_trec-5a.py          | process trec-5 to trec5_degrade20_processed.txt and trec5_degrade5_processed (process from  TREC-5 raw data) download processed files from https://drive.google.com/drive/folders/1-ACRx8X94JGbHU0tmSKsFhmLYZdX6MzT?usp=share_link  |
-| create_testtrain.py          | separate to train and test data, full_degrade5_ground_a_train80.txt, full_degrade5_input_a_train80.txt, full_degrade5_ground_a_test80.txt, full_degrade5_input_a_test80.txt  |
-| create_testdata.py          | save train and test data to a pkl file, train_test_a.pkl  | 
-| | |
+create_trec-5a.py : processed trec-5 to trec5_degrade20_processed.txt and trec5_degrade5_processed (process from  TREC-5 raw data) download processed files from https://drive.google.com/drive/folders/1-ACRx8X94JGbHU0tmSKsFhmLYZdX6MzT?usp=share_link
+
+create_testtrain.py : separated train and test data, full_degrade5_ground_a_train80.txt, full_degrade5_input_a_train80.txt, full_degrade5_ground_a_test80.txt, full_degrade5_input_a_test80.txt
+
+create_testdata.py : saved train and test data to a pkl file, train_test_a.pkl
+
+
 |eval_dh.py |	evaluation word level by using Levenshtein Distance, it read data from  train_test_a.pkl file |
 |eval_pyspell.py|	evaluation word level by using pyspellchecker, it read data from  train_test_a.pkl file |
 |train_lstm.py|	training word level by using  LSTM, it read data from  train_test_a.pkl file|
