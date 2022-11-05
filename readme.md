@@ -55,3 +55,5 @@ evaluation sentence level by using using the new method, cognition-inspired. It 
 
 **eval_sdr_layer2_process.py**
 evaluation sentence level by using using the new method, cognition-inspired. It is the same as eval_sdr_layer2.py but do parallel processing.
+
+Please set PYTHONHASHSEED=0 to prevent hash changing
